@@ -1,0 +1,32 @@
+/* Assure que le body prend toute la hauteur de la fenêtre */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Permet au footer d'être toujours en bas */
+  }
+  
+  /* Container principal de l'app */
+  .app-container {
+    min-height: 100vh;  /* Assure que l'app prend au moins la hauteur de l'écran */
+    display: flex;
+    flex-direction: column; /* Dispose les éléments en colonne : contenu + footer */
+  }
+  
+  /* Contenu principal */
+  .content {
+    flex-grow: 1; /* Permet au contenu de prendre l'espace restant */
+  }
+  
+  /* Footer */
+  footer {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(107, 109, 107, 0.4);
+    background: linear-gradient(hwb(240 44% 37%), rgba(37, 37, 51, 0.774));
+  }
+  

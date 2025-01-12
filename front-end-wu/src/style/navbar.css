@@ -1,0 +1,174 @@
+
+/*
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; // Ajout pour garantir que tout est bien calculé 
+}
+
+
+.navbar {
+    position: fixed;
+    top: 0; // Ajoute un positionnement fixe en haut 
+    left: 0; // Assure que la navbar commence à gauche 
+    width: 100%; // Assure que la navbar occupe toute la largeur de l'écran 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 600; //Corrige la valeur de la font-weight (600 au lieu de 600) 
+    background-color: #110136;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    background: linear-gradient(rgba(8, 6, 151, 0.774), hwb(0 85% 11%));
+    z-index: 1000; //Assure que la navbar reste au-dessus des autres éléments 
+}
+
+.navbar-brand img {
+    height: 70px;
+}
+
+.navbar-search input {
+    padding: 10px;
+    width: 500px;
+    border: none;
+    border-radius: 3px;
+}
+
+.navbar-search button {
+    padding: 10px;
+    border: none;
+    margin-left: 2px;
+    background-color: #fff;
+    color: #585048;
+    font-weight: bold;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.navbar-link a,
+li {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+    font-weight: bold;
+    list-style: none;
+}
+
+.navbar-link a:hover {
+    color: #ddd;
+}
+
+//Ajouter un espacement pour compenser la navbar fixe 
+body {
+    padding-top: 80px; //Vous pouvez ajuster cette valeur pour correspondre à la hauteur de votre navbar 
+}
+
+
+*/
+
+
+
+
+
+/* Applique le box-sizing sur tous les éléments pour éviter les problèmes de largeur */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    padding-top: 80px; /* Espacement pour compenser la hauteur de la navbar */
+    overflow-x: hidden; /* Empêche le débordement horizontal */
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;  /* Navbar occupe toute la largeur */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #110136;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    background: linear-gradient(rgba(8, 6, 151, 0.774), hwb(0 85% 11%));
+    z-index: 1000;
+}
+
+.navbar-brand img {
+    height: 70px;
+}
+
+.navbar-search input {
+    padding: 10px;
+    width: 500px;
+    border: none;
+    border-radius: 3px;
+}
+
+.navbar-search button {
+    padding: 10px;
+    border: none;
+    margin-left: 2px;
+    background-color: #fff;
+    color: #585048;
+    font-weight: bold;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.navbar-link a,
+li {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+    font-weight: bold;
+    list-style: none;
+}
+
+.navbar-link a:hover {
+    color: #ddd;
+}
+
+/* Ajouter un espacement pour compenser la navbar fixe */
+.app-container {
+    padding-top: 80px;  /* Ajustez selon la hauteur de votre navbar */
+}
+
+/* Solution responsive : éviter le débordement horizontal sur les petits écrans */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 15px;  /* Ajuste le padding de la navbar sur petits écrans */
+    }
+
+    .navbar-search input {
+        width: 100%;  /* Permet à la barre de recherche de s'ajuster à la taille de l'écran */
+        box-sizing: border-box; /* Garantir que la largeur inclut les marges et paddings */
+    }
+
+    .navbar-search button {
+        padding: 8px;
+    }
+
+    .navbar-link a {
+        margin: 0 5px;  /* Réduit l'espacement entre les liens */
+    }
+
+    .content {
+        padding: 20px; /* Ajuste le padding du contenu principal */
+    }
+}
+
+
+
+
